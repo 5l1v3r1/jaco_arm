@@ -20,7 +20,7 @@ catkin_make
 sudo cp ~/catkin_ws/src/kinova-ros/kinova_driver/udev/10-kinova-arm.rules /etc/udev/rules.d/
 ```
 
-4. Launch driver
+4. Launch driver in background
 
 ```bash
 roslaunch kinova_bringup kinova_robot.launch 
