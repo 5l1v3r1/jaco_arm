@@ -33,7 +33,7 @@ sudo cp ~/catkin_ws/src/kinova-ros/kinova_driver/udev/10-kinova-arm.rules /etc/u
 roslaunch kinova_bringup kinova_robot.launch 
 ```
 
-5. Launch grasping demo
+6. Launch grasping demo
 
 ```bash
 python grasping.py
