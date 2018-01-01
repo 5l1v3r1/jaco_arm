@@ -14,13 +14,20 @@ cd ~/catkin_ws
 catkin_make
 ```
 
-3. Install driver
+3. Add it to the bash file
+
+```bash
+echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+```
+
+4. Install driver
 
 ```bash
 sudo cp ~/catkin_ws/src/kinova-ros/kinova_driver/udev/10-kinova-arm.rules /etc/udev/rules.d/
 ```
 
-4. Launch driver in background
+5. Launch driver in background
 
 ```bash
 roslaunch kinova_bringup kinova_robot.launch 
