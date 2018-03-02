@@ -47,8 +47,8 @@ def maybe_move_or_go_home(position, orientation, prefix, threshold=5e-2):
     dist = get_distance(position, new_position)
 
     if dist > threshold:
-        homeRobot(prefix)
-        return False
+        # homeRobot(prefix)
+        return True
     else:
         return True
 

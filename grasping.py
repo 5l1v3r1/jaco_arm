@@ -23,9 +23,10 @@ if __name__ == '__main__':
 
         for i in range(100):
             maybe_move_or_go_home(initial_position, orientation, prefix)
-
-            x = np.random.uniform(-0.3, 0.3)
-            y = np.random.uniform(-0.6, -0.4)
+            x = 0.1568450084279111
+            y = -0.43456870558539773
+            # x = np.random.uniform(-0.3, 0.3)
+            # y = np.random.uniform(-0.6, -0.4)
             z = 0.01
 
             maybe_move_or_go_home([x, y, z], orientation, prefix)
@@ -38,6 +39,8 @@ if __name__ == '__main__':
                     break
 
             print(flag_grasp)
+            if flag_grasp:
+                print(x, y)
 
             maybe_move_or_go_home(initial_position, orientation, prefix)
             result = gripper_client([0, 0, 0], prefix)
